@@ -44,19 +44,16 @@
 
 /***************/
 
-body {
-  background: #ece9e6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #ffffff, #ece9e6); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #ffffff,
-    #ece9e6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+.Main-Nav {
+    position: sticky;
+    top: 0;
+    font-size: 1.3rem;
 }
 
-#Main-Nav {
-    opacity: 0;
-    animation: slideToUp 1s 1s 1 ease-in-out forwards;
+.Nav-ToUp {
+  opacity: 0;
+  animation: slideToUp 1s 1s 1 ease-in-out forwards;
 }
 
 #Principal {
@@ -74,35 +71,7 @@ body {
     animation: slideToRight 1s 2s 1 ease-in-out forwards;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  z-index: +1;
-  margin-top: -1%;
-}
 
-.links {
-  display: flex;
-  justify-content: flex-end;
-}
-
-div {
-  display: flex;
-  flex: 1;
-}
-a {
-  margin: 2%;
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
-  transition: 0.4s;
-}
 #Login-Drop {
   margin-top: 0.4rem;
 }
@@ -128,7 +97,7 @@ a:hover {
 
 .principal {
   display: flex;
-  padding: 8rem;
+  padding-bottom: 8rem;
 }
 
 .moto {
@@ -145,9 +114,6 @@ a:hover {
 }
 
 .rightmain {
-  display: flex;
-  justify-content: flex-end;
-
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
   font-size: 2.7rem;
@@ -165,6 +131,7 @@ a:hover {
   transition: 0.8s;
   position: relative;
   overflow: hidden;
+  font-size: 1.2rem;
 }
 
 .boton:hover {
