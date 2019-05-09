@@ -33,11 +33,11 @@
       opacity: 0;
     }
     50% {
-      font-size: 3.2rem;
+      font-size: 2.8rem;
       opacity: 1;
     }
     100% {
-      font-size: 2.7rem;
+      font-size: 2.5rem;
       opacity: 1;
     }
   }
@@ -69,6 +69,10 @@
 #Img-Derecha {
     opacity: 0;
     animation: slideToRight 1s 2s 1 ease-in-out forwards;
+}
+
+#Img-ITSU {
+  width: 100%;
 }
 
 
